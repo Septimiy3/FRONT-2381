@@ -1,0 +1,27 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.row-container {
+    display: flex;
+}
+.card-container {
+    padding: 10px;
+}
+.text-container {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.text-container2 {
+    max-height: 200px;
+    overflow: hidden;
+}
+.text-container3 {
+    max-height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 11;
+    -webkit-box-orient: vertical;
+}
