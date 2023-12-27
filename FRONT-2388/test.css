@@ -1,0 +1,63 @@
+body {
+
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.row-container {
+    display: flex;
+}
+.card-container {
+    display: flex;
+    padding: 20px;
+    background-color: red;
+    height: 300px;
+    border: 5px solid black;
+    flex: 1;
+    margin-left: 10px;
+}
+.card-relative {
+    position: relative;
+}
+.card{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+.top1 {
+    background-color: green;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.top2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: pink;
+}
+.top3 {
+    background-color: orange;
+}
+.bottom1 {
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.bottom2 {
+    position: absolute;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.bottom3 {
+    background-color: blue;
+}
