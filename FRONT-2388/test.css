@@ -1,6 +1,3 @@
-body {
-
-}
 .main-container {
     display: flex;
     flex-direction: column;
@@ -60,4 +57,12 @@ body {
 }
 .bottom3 {
     background-color: blue;
+}
+.block {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: grey;
 }
