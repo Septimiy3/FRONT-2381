@@ -1,11 +1,12 @@
 @font-face {
-    font-family: "Montserrat";
+    font-family: "Matias";
     font-style: normal;
     font-weight: 400;
-    src:
-url("/fonts/Montserrat-VariableFont_wght.ttf");
+    src: url('fonts/Matias-Webfont.ttf') format('ttf'),
+         url('fonts/Matias.otf') format('otf');
+    font-display: auto;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Matias', serif;
 }
