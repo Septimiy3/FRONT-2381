@@ -1,0 +1,30 @@
+ul {
+  list-style: none;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item {
+  padding: 20px;
+}
+
+.header-button {
+  background-color: deepskyblue;
+  padding: 10px;
+  border: 0;
+  box-shadow: 0;
+}
+
+.navButton {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hovered {
+  background-color: lightblue;
+}
