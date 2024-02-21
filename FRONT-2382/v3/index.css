@@ -2,8 +2,8 @@
     font-family: "Matias";
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/Matias-Webfont.ttf') format('ttf'),
-         url('fonts/Matias.otf') format('otf');
+    src: url('fonts/Matias-Webfont.ttf') ,
+         url('fonts/Matias.otf');
     font-display: auto;
 }
 
