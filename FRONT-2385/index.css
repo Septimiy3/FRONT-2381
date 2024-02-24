@@ -1,57 +1,23 @@
 body {
-    color: white;
-}
-.main-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    background-color: grey;
+    height: 100vh;
+    margin: 0;
 }
-.row-container {
-    display: flex;
-    
-}
-.card-container {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 300px;
-    flex-grow: 2;
-    flex-shrink: 1;
-    padding: 5px;
-}
-.card-container2 {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 300px;
-    flex-shrink: 0;
 
-    padding: 5px;
-}
-.card-container3 {
+.container {
     display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 300px;
-    flex-basis: 50px;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-grow: 1;
     flex-shrink: 1;
-    padding: 5px;
-}
-.card-container4 {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 300px;
-    flex-shrink: 1;
-    padding: 5px;
-}
-.avatar {
-    padding: 10px;
-    background-color: blue;
-}
-.description {
-    padding: 10px;
-    background-color: black;
+    flex-basis: calc(33.33% - 20px); /* Учитываем отступы между элементами */
+    margin: 10px;
+    box-sizing: border-box;
+    min-height: 100px; /* Минимальная высота элемента */
+    background-color: lightblue;
+    border: 1px solid #333;
 }
