@@ -1,12 +1,13 @@
 @font-face {
-    font-family: "Matias";
+    font-family: 'Dancing Script';
+    src: local('Dancing Script Variable Font'), local('DancingScript-VariableFont_wght'),
+    url('fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: url('fonts/Matias-Webfont.ttf') format('ttf'),
-         url('fonts/Matias.otf') format('otf');
-    font-display: auto;
+    font-display: swap;
 }
 
 body {
-    font-family: 'Matias', serif;
+    font-family: 'Dancing Script', cursive;
 }
+
