@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <h1>Подключение js и css в проект</h1>
+    <div class="add-js-in-script">
+        <button class="addJsBtn">Где подключен скрипт</button>
+        <h2 class="h2">Данный текст стилизован в index.css</h2>
+    </div>
+    <div class="add-js-in-html">
+        <button class="addHtmlBtn">Где подключен скрипт</button>
+        <script>
+            const btnAddHtml = document.querySelector('.addHtmlBtn')
+            btnAddHtml.addEventListener('click', () => {
+                alert('Данный скрипт подключён в HTML')
+            })
+        </script>
+        <h2 class="h2Html">
+            Данный текст стилизован в internal
+            <style>
+                .h2Html {
+                    margin: 5px;
+                    font-size: 16px;
+                    color: green;
+                }
+            </style>
+        </h2>
+    </div>
+    <div>
+        <h2 style="margin: 5px; font-size:16px; color:purple;">Данный текст стилизован в inline</h2>
+        <h2 class="h2Js">Нажми на меня и стильизменится через js</h2>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
