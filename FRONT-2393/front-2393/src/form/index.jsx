@@ -19,14 +19,12 @@ const Form = () => {
         e.preventDefault();
         console.log(formData[`page${activePage}`]);
 
-        // Сброс значений полей после отправки формы
         setFormData((prevData) => ({
             ...prevData,
             [`page${activePage}`]: getInitialValues(activePage),
         }));
     };
-
-// Функция для получения начальных значений полей для каждой страницы
+    
     const getInitialValues = (page) => {
         switch (page) {
             case 1:
