@@ -17,8 +17,6 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData[`page${activePage}`]);
-
         setFormData((prevData) => ({
             ...prevData,
             [`page${activePage}`]: getInitialValues(activePage),
