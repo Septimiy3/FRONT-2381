@@ -24,7 +24,7 @@ const Form = () => {
             [`page${activePage}`]: getInitialValues(activePage),
         }));
     };
-    
+
     const getInitialValues = (page) => {
         switch (page) {
             case 1:

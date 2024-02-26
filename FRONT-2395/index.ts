@@ -22,6 +22,6 @@ btn.addEventListener('click',()=> {
     console.log('тест')
     console.log(greet('Petter'))
     console.log(createPerson('Mark',12))
-    console.log(divideNumbers(1,2))
+    console.log(divideNumbers('sdsd','sddd'))
     logMessage('Привет')
 })

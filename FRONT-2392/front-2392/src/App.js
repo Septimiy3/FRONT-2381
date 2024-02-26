@@ -1,6 +1,5 @@
 import './App.css';
 import {useEffect, useState} from "react";
-import TestPage from "./Test/TestPage";
 
 function App() {
 
@@ -35,7 +34,6 @@ function App() {
     }, [hoveredButton]);
 
     useEffect(() => {
-        // В этом useEffect вы можете использовать состояние hoveredButton
         console.log(`Курсор наведен на кнопку с ID: ${hoveredButton}`);
     }, [hoveredButton]);
 
