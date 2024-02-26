@@ -6,7 +6,6 @@ function App() {
     const [hoveredButton, setHoveredButton] = useState(null);
 
     useEffect(() => {
-        console.log('mount')
         const handleMouseEnter = (e) => {
             const buttonId = e.target.id;
             setHoveredButton(buttonId);
@@ -25,7 +24,6 @@ function App() {
         });
 
         return () => {
-            console.log('unmount')
             buttons.forEach((button) => {
                 button.removeEventListener('mouseenter', handleMouseEnter);
                 button.removeEventListener('mouseleave', handleMouseLeave);
