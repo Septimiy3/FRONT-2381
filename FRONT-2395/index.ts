@@ -11,12 +11,13 @@ function greet(name: string, greeting: string = 'Привет'): string {
 function createPerson(name: string, age: number): { name: string, age: number } {
     return { name, age };
 }
-function divideNumbers(a: string | number, b: string | number)  {
-    if (typeof a === 'string' || typeof b === 'string') {
-        throw new Error("Division by zero is not allowed.");
+function divideNumbers(a: number, b: number)  {
+    if (typeof a !== 'number' || typeof b !== 'number' || isNaN(a) || isNaN(b) || b === 0) {
+        throw new Error("Неверные параметры или деление на ноль не допускается.");
     }
     return a / b;
 }
+
 
 btn.addEventListener('click',()=> {
     console.log('тест')
